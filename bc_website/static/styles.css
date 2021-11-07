@@ -1,0 +1,157 @@
+body {
+  background: #353535;
+  color: white;
+}
+.text {
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 64px;
+}
+#navBar {
+  position: relative;
+  color: darkgrey;
+}
+ul.navBar li {
+  display: inline;
+  margin: 30px;
+  color: darkgrey;
+}
+
+#navIcons i {
+  font-size: 30px;
+  padding: 5px;
+  color: darkgrey;
+}
+#gradientBackground {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 80px;
+  margin: auto;
+  width: 80%;
+  height: 450px;
+  background: linear-gradient(250.2deg, #00de7a 0%, #00b9e1 100%);
+  border-radius: 32px;
+  overflow: hidden;
+}
+#desc {
+  width: 40%;
+}
+#roundButton {
+  background: white;
+  width: 25%;
+  border-radius: 70px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+#roundButton a:visited,
+#roundButton a:link {
+  color: #00a9de;
+  text-decoration: none;
+}
+#code {
+  position: absolute;
+  left: 55%;
+  bottom: -200px;
+  transform: rotate(348deg);
+}
+.icons {
+  font-size: 10em;
+  color: rgba(0, 0, 0, 0.2);
+  margin: -290px;
+  z-index: -1;
+  position: relative;
+  transform: rotate(320deg);
+}
+#ticTacToeIcon {
+  transform: rotate(50deg);
+}
+#projects {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.project {
+  display: inline;
+  width: 30%;
+  margin: 30px;
+  margin-top: 150px;
+  border-radius: 32px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px;
+  height: 400px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+#project1 {
+  background: linear-gradient(214.68deg, #00e7a1 0%, #00b473 100%);
+  color: white;
+}
+#project2 {
+  background: linear-gradient(214.68deg, #e68600 0%, #ff5c00 100%);
+}
+#project3 {
+  background: linear-gradient(214.68deg, #00a3ff 0%, #0047ff 100%);
+}
+.project-heading {
+  color: white;
+  padding-top: 125px;
+}
+.project a:link,
+.project a:visited {
+  color: white;
+  text-decoration: none;
+}
+#calculatorIcon {
+  padding-right: 100px;
+  transform: rotate(333deg);
+}
+#blueBg {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 150px;
+  background: linear-gradient(247.04deg, #00c0ff 0%, #7c15ff 100%);
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+#blueOval {
+  position: absolute;
+  left: -200px;
+  top: -100px;
+  float: left;
+  background: rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 700px;
+  border-radius: 50%;
+  margin-right: 100px;
+}
+#blueOvalText {
+  padding-top: 100px;
+  padding-left: 250px;
+}
+#codeIcon {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 13em;
+  transform: rotate(30deg);
+  margin-top: 125px;
+  margin-left: 300px;
+  z-index: -1;
+}
+#blueBgText {
+  margin-top: 25px;
+  margin-left: 500px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: left;
+}
