@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Hello</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e4cebd824.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id = "navBar" class = "text" >
+        <ul class = "navBar" style="list-style-type: none; margin-left: 100px;">
+            <li>
+                <b>Beginner.Codes</b>
+            </li>
+            <span style="position:absolute; right: 15%;">
+                <li>
+                    <a class="text" href="https://github.com/beginner-codes/project-ideas" style="text-decoration: none; color:darkgray">Project Ideas</a>
+                </li>
+                <li>
+                    <a class="text" href="https://github.com/beginner-codes/challenges" style="text-decoration: none; color:darkgray">Challenges</a>
+                </li>
+            <li id = "navIcons">
+                <a href="https://twitter.com/ZechCodes" id="twitterLogo" class="logo"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://disboard.org/server/644299523686006834" id="discordLogo" class="logo"><i class="fab fa-discord fa-2x"></i></a>
+                <a href="https://github.com/beginner-codes" id="githubLogo" class="logo"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            </span>
+        </ul>
+    </div>
+    <div id = "gradientBackground" class="text">
+        <h2>Learning Together</h1>
+        <h3 id = "desc">Learn to code with our friendly community of 4000 members!</h1>
+        <div id="roundButton">
+            <a id="joinDiscord" class="text" href="https://disboard.org/server/644299523686006834"><b>Join us on Discord!</b></a>
+        </div>
+        <img id="code" src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"width=770 />
+    </div>
+    <div class="text" id = "projects">
+        <div class = "project" id = "para1">
+            <h2>Project Ideas</h2>
+            <p>One of the best ways to learn to code is by writing code. Here are some project ideas to get you started!</p>
+            <a href="https://github.com/beginner-codes/project-ideas/blob/main/summer_2021.md" style="color:  #4075FF; font-size: 25px;">Even More Ideas  <i class="fas fa-external-link-alt"></i></p></a>
+        </div>
+        <div class="project" id="project1">
+            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/tic-tac-toe.md">
+            <h2 class="project-heading">Tic Tac <br> Toe</h2>
+            <i id="ticTacToeIcon" class="fa fa-gamepad fa-fw icons"></i>
+            </a>
+        </div>
+        <div class="project" id = "project2">
+            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/stock-checker.md">
+            <h2 class="project-heading">Stock <br> Checker</h2>
+            <i id="stockCheckerIcon" class="fas fa-dollar-sign icons"></i>
+            </a>
+        </div>
+        <div class = "project" id = "project3">
+            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/conversion-calculator.md">
+            <h2 class="project-heading">Calculator</h2>
+            <i id="calculatorIcon" class="fas fa-calculator icons"></i>
+            </a>
+        </div>
+    </div>
+    <div id="blueBg">
+        <div id="blueOval" class="text">
+            <div id = "blueOvalText">
+                <h2>Challenges</h2>
+                <p>A great way to hone <br> your skills and <br>challenge your problem <br>solving skills is to<br> complete
+                    challenges!
+                </p>
+            </div>
+        </div>
+        <div id = "blueBgText", class = "text">
+            <i class="fas fa-code" id = "codeIcon"></i>
+            <h2>
+                Challenge 277 - Distance to Nearest Vowel
+            </h2>
+            <p>Friday, June 25th 2021</p>
+            <p>
+                Write a function that takes in a string and for each character, returns the distance to the nearest vowel in the string. If the character is a vowel itself, return 0.
+            </p>
+            <h2>
+                Challenge 276 - Abbreviations Unique?
+            </h2>
+            <p>
+                Thursday, June 24th 2021
+            </p>
+        </div>
+    </div>
+    <h3 style="text-align:center; color: darkgray;margin-top: 100px;"class="text">&copy; Zech Zimmerman 2021</h3>
+</body>
+
+</html>
