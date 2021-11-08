@@ -1,0 +1,195 @@
+body {
+  box-sizing: border-box;
+  background-color: #353535;
+}
+
+.header {
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  color: #bbbbbb;
+}
+#header-content {
+  display: flex;
+  gap: 40px;
+}
+#header-links {
+  font-size: 25px;
+}
+.header-right {
+  margin: 5px;
+}
+.header-right:visited {
+  color: #bbbbbb;
+}
+#main {
+  background: linear-gradient(250.2deg, #00de7a 0%, #00b9e1 100%);
+  width: 85%;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 32px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 75px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+#content h1 {
+  font-size: 40px;
+}
+#content p {
+  font-size: 25px;
+}
+#main-image {
+  position: absolute;
+  top: 120px;
+  right: -45px;
+  transform: rotate(350deg);
+}
+#main-button {
+  height: 50px;
+  width: 200px;
+  color: #00a9de;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+#project-ideas {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 200px;
+}
+.box {
+  width: 240px;
+  height: 330px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 23px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+#tic-tac-toe-box {
+  background: linear-gradient(214.68deg, #00e7a1 0%, #00b473 100%);
+}
+#stock-check-box {
+  background: linear-gradient(214.68deg, #e68600 0%, #ff5c00 100%);
+}
+#calculator-box {
+  background: linear-gradient(214.68deg, #00a3ff 0%, #0047ff 100%);
+}
+.icon {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+#controller {
+  top: 0px;
+  left: -50px;
+  font-size: 10em;
+  transform: rotate(60deg);
+}
+#dollar {
+  top: -10px;
+  left: 0px;
+  font-size: 12em;
+  transform: rotate(330deg);
+}
+#calculator {
+  font-size: 10em;
+  transform: rotate(330deg);
+  top: -10px;
+  left: -30px;
+}
+#project-text {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0px;
+  text-align: left;
+}
+#challenge-box {
+  width: 80%;
+  height: 400px;
+  background: linear-gradient(247.04deg, #00c0ff 0%, #7c15ff 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+}
+#oval {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#oval-text {
+  width: 230px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #4075ff;
+}
+#right-side-text {
+  padding-left: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 250px;
+  line-height: 15px;
+  padding-bottom: 50px;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  z-index: 1;
+}
+#right-side-text a:visited {
+  color: white;
+}
+#code-icon {
+  position: absolute;
+  right: 100px;
+  font-size: 15em;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  transform: rotate(30deg);
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: #8d8d8d;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+}
