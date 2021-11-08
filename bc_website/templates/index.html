@@ -1,95 +1,81 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hello</title>
-    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e4cebd824.js" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <title>Beginner.Codes</title>
 </head>
-
 <body>
-    <div id = "navBar" class = "text" >
-        <ul class = "navBar" style="list-style-type: none; margin-left: 100px;">
-            <li>
-                <b>Beginner.Codes</b>
-            </li>
-            <span style="position:absolute; right: 15%;">
-                <li>
-                    <a class="text" href="https://github.com/beginner-codes/project-ideas" style="text-decoration: none; color:darkgray">Project Ideas</a>
-                </li>
-                <li>
-                    <a class="text" href="https://github.com/beginner-codes/challenges" style="text-decoration: none; color:darkgray">Challenges</a>
-                </li>
-            <li id = "navIcons">
-                <a href="https://twitter.com/ZechCodes" id="twitterLogo" class="logo"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://disboard.org/server/644299523686006834" id="discordLogo" class="logo"><i class="fab fa-discord fa-2x"></i></a>
-                <a href="https://github.com/beginner-codes" id="githubLogo" class="logo"><i class="fab fa-github fa-2x"></i></a>
-            </li>
-            </span>
-        </ul>
-    </div>
-    <div id = "gradientBackground" class="text">
-        <h2>Learning Together</h1>
-        <h3 id = "desc">Learn to code with our friendly community of 4000 members!</h1>
-        <div id="roundButton">
-            <a id="joinDiscord" class="text" href="https://disboard.org/server/644299523686006834"><b>Join us on Discord!</b></a>
-        </div>
-        <img id="code" src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"width=770 />
-    </div>
-    <div class="text" id = "projects">
-        <div class = "project" id = "para1">
-            <h2>Project Ideas</h2>
-            <p>One of the best ways to learn to code is by writing code. Here are some project ideas to get you started!</p>
-            <a href="https://github.com/beginner-codes/project-ideas/blob/main/summer_2021.md" style="color:  #4075FF; font-size: 25px;">Even More Ideas  <i class="fas fa-external-link-alt"></i></p></a>
-        </div>
-        <div class="project" id="project1">
-            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/tic-tac-toe.md">
-            <h2 class="project-heading">Tic Tac <br> Toe</h2>
-            <i id="ticTacToeIcon" class="fa fa-gamepad fa-fw icons"></i>
-            </a>
-        </div>
-        <div class="project" id = "project2">
-            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/stock-checker.md">
-            <h2 class="project-heading">Stock <br> Checker</h2>
-            <i id="stockCheckerIcon" class="fas fa-dollar-sign icons"></i>
-            </a>
-        </div>
-        <div class = "project" id = "project3">
-            <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/conversion-calculator.md">
-            <h2 class="project-heading">Calculator</h2>
-            <i id="calculatorIcon" class="fas fa-calculator icons"></i>
-            </a>
+    <div class="header">
+        <h2>Beginner.codes</h2>
+        <div id="header-content">
+            <div id="header-links">
+                <a class = "header-right" href="https://github.com/beginner-codes/project-ideas">Project Ideas</a>
+                <a class = "header-right" href="https://github.com/beginner-codes/challenges">Challenges</a>
+            </div>
+            <div id="header-icons">
+                <a href="https://twitter.com/ZechCodes" class = "header-right"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://disboard.org/server/644299523686006834"class = "header-right"><i class="fab fa-discord fa-2x"></i></a>
+                <a href="https://github.com/beginner-codes"class = "header-right"><i class="fab fa-github fa-2x"></i></a>
+            </div>
         </div>
     </div>
-    <div id="blueBg">
-        <div id="blueOval" class="text">
-            <div id = "blueOvalText">
+    <div id = "main">
+        <div id = "content">
+            <h1>Learning Together</h1>
+            <p>Learn to code with our friendly<br>community of 3,758 learners!</p>
+            <a href="https://disboard.org/server/644299523686006834"><div id = "main-button">Join Us On Discord</div></a>
+        </div>
+        <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" id="main-image" height="450px">
+    </div>
+    <div id = "project-ideas">
+        <div id="project-text" class="box">
+            <h3>Project Ideas</h3>
+            <br>
+            <p>
+                One of the best ways to learn to code is by writing code. Here are some project ideas to get you started!
+            </p>
+            <a  href="https://github.com/beginner-codes/project-ideas/blob/main/summer_2021.md">Even More Ideas <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/tic-tac-toe.md"><div id="tic-tac-toe-box" class="box">
+            <i class="fas fa-gamepad icon" id="controller"></i>
+            <h2>Tic Tac <br>Toe</h2>
+        </div>
+        </a>
+        <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/stock-checker.md"><div id="stock-check-box" class="box">
+            <i class="fas fa-dollar-sign icon" id="dollar"></i>
+            <h2>Stock <br>Checker</h2>
+        </div></a>
+        <a href="https://github.com/beginner-codes/project-ideas/blob/main/projects/conversion-calculator.md"><div id="calculator-box" class="box">
+            <i class="fas fa-calculator icon" id="calculator"></i>
+            <h2>Calculator</h2>
+        </div></a>
+    </div>
+    <div id="challenge-box">
+        <div id="oval">
+            <div id="oval-text">
                 <h2>Challenges</h2>
-                <p>A great way to hone <br> your skills and <br>challenge your problem <br>solving skills is to<br> complete
-                    challenges!
+                <p>
+                    A great way to hone your skills and challenge your problem solving skills is to complete challenges!
                 </p>
             </div>
         </div>
-        <div id = "blueBgText", class = "text">
-            <i class="fas fa-code" id = "codeIcon"></i>
-            <h2>
-                Challenge 277 - Distance to Nearest Vowel
-            </h2>
+        <div id="right-side-text">
+            <h3>Challenge 277 - Distance to Nearest Vowel</h3>
             <p>Friday, June 25th 2021</p>
-            <p>
-                Write a function that takes in a string and for each character, returns the distance to the nearest vowel in the string. If the character is a vowel itself, return 0.
-            </p>
-            <h2>
-                Challenge 276 - Abbreviations Unique?
-            </h2>
-            <p>
-                Thursday, June 24th 2021
-            </p>
+            <p>Write a function that takes in a string and for each character, returns the distance to the nearest vowel in the string. If the character is a vowel itself, return 0.</p>
+            <h3>Challenge 276 - Abbreviations Unique?</h3>
+            <p>Thursday, June 24th 2021</p>
+            <a href="https://github.com/beginner-codes/challenges"><h3>Even More Challenges<i class="fas fa-external-link-alt"></i></h3></a>
         </div>
+        <i class="fas fa-code" id ="code-icon"></i>
     </div>
-    <h3 style="text-align:center; color: darkgray;margin-top: 100px;"class="text">&copy; Zech Zimmerman 2021</h3>
+    <div id="footer">&copy; Zech Zimmerman 2021</div>
 </body>
-
 </html>
