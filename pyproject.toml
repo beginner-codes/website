@@ -13,6 +13,9 @@ python = "^3.9"
 fastapi = "^0.68.0"
 SQLAlchemy = "^1.4.22"
 aiohttp = "^3.7.4"
+uvicorn = "^0.15.0"
+aiofiles = "^0.7.0"
+Jinja2 = "^3.0.3"
 
 [tool.poetry.dev-dependencies]
 
