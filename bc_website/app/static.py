@@ -1,4 +1,4 @@
-from bc_website.app.app import app, PATH
+from bc_website.app import app, PATH
 from fastapi.staticfiles import StaticFiles
 
 

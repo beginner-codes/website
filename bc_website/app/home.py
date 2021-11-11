@@ -1,4 +1,4 @@
-from bc_website.app.app import app, templates
+from bc_website.app import app, templates
 from fastapi import Request
 from fastapi.responses import HTMLResponse
 
