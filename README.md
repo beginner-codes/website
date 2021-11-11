@@ -14,6 +14,14 @@ poetry install
 ```
 This will install all the necessary modules inside of a virtual environment.
 
+**Launching**
+
+From the terminal you can launch the site by running
+```shell
+poetry run python -m bc_website
+```
+This assumes that you're in the repo folder where you can see the `bc_website` folder along with the `LICENSE`, `poetry.lock`, `pyproject.toml`, and `README.md` files.
+
 ## Code
 
 Code should go inside the `bc_website` folder.
