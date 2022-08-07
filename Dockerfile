@@ -27,6 +27,7 @@ RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache /wheels/*
 
 RUN chmod ugo+rw /app
+COPY templates templates
 COPY website website
 
 USER app

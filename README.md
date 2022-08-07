@@ -1,7 +1,9 @@
-# summer-of-code-website
-The official website repo for the Beginner.Codes Summer of Code event.
+# Beginner.Codes Website
+
+The official website for the Beginner.Codes Discord.
 
 ## Installation & Running
+
 From inside the repo folder run
 ```sh
 pip install poetry
@@ -13,6 +15,5 @@ poetry shell
 ```
 Then start the server (`localhost:8000`)
 ```sh
-python -m soc
+python -m website
 ```
-Any config will go in `development.config.yaml`.
