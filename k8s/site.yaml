@@ -29,7 +29,7 @@ spec:
     tls:
       - hosts:
         - beginner.codes
-        secretName: beginnercodes-cert
+        secretName: beginnercodes-website-cert
     rules:
       - host: beginner.codes
         http:
