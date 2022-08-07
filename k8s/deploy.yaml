@@ -31,7 +31,7 @@ spec:
                       app: beginnercodes-website
             containers:
               - name: starlette-site
-                image: zzmmrmn/beginnercodes-website:<IMAGE_VERSION>
+                image: zzmmrmn/beginner.codes-website:<IMAGE_VERSION>
                 ports:
                   - containerPort: 8000
                 resources:
