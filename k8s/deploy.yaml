@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
     name: website
     labels:
-        app: beginner.codes-website
+        app: beginnercodes-website
 spec:
     strategy:
         type: RollingUpdate
@@ -13,13 +13,13 @@ spec:
             maxUnavailable: 50%
     selector:
         matchLabels:
-            app: beginner.codes-website
+            app: beginnercodes-website
             tier: frontend
     replicas: 2
     template:
         metadata:
             labels:
-                app: beginner.codes-website
+                app: beginnercodes-website
                 tier: frontend
         spec:
             topologySpreadConstraints:
@@ -28,10 +28,10 @@ spec:
               whenUnsatisfiable: ScheduleAnyway
               labelSelector:
                   matchLabels:
-                      app: beginner.codes-website
+                      app: beginnercodes-website
             containers:
-              - name: fastapi-site
-                image: zzmmrmn/beginner.codes-website:<IMAGE_VERSION>
+              - name: starlette-site
+                image: zzmmrmn/beginnercodes-website:<IMAGE_VERSION>
                 ports:
                   - containerPort: 8000
                 resources:
